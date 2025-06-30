@@ -1,3 +1,3 @@
 # chess-game
 
-![Screenshot (981)](https://github.com/user-attachments/assets/bf3502bc-f916-4adc-9f62-e22c0c82ca9e)
+![Screenshot (982)](https://github.com/user-attachments/assets/71261adf-1f59-4d4a-8766-c1af7ec1345f)
