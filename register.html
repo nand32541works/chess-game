@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | ChessMaster</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="#" class="logo"><i class="fa-solid fa-chess"></i>ChessMaster</a>
+        <ul>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="login.html">Login</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="contact1.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+  </header>
+  <div class="register-container">
+    <h2>Create Your Master Chess Account</h2>
+    <form id="registerForm">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" placeholder="Enter your full name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="username">Choose a Username</label>
+        <input type="text" id="username" placeholder="Choose a username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Create Password</label>
+        <input type="password" id="password" placeholder="Create a password" required>
+      </div>
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input type="password" id="confirmPassword" placeholder="Confirm your password" required>
+      </div>
+      <center>
+        <button type="submit" class="btn">Register</button>
+      </center>
+    </form>
+    <div class="register-footer">
+      Already have an account?
+      <a href="login.html">Login here</a>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="#" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fa-solid fa-chess" style="color: var(--main-color); margin-right: 1rem;"></i>ChessMaster
+          </a>
+          <br><br>
+          <p>The classic strategy game, online. Play against friends, the computer, or random opponents. Join now!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Courses</h3>
+          <div class="links">
+            <a href="#">Play vs Computer</a>
+            <a href="#">2 Player Match</a>
+            <a href="#">Timed Game</a>
+            <a href="#">Leaderboards</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3 style="margin-top: -20px;">Contact</h3>
+          <div class="contact-details">
+            <a><i class="fa fa-location" style="gap: 8px;"></i> ChessMaster HQ, Park Street,<br> Kolkata, India </a>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone" style="gap: 8px;"></i> +91-8100402401
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const registerForm = document.getElementById("registerForm");
+      registerForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const fullName = document.getElementById("fullname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const username = document.getElementById("username").value.trim();
+        const password = document.getElementById("password").value.trim();
+        const confirmPassword = document.getElementById("confirmPassword").value.trim();
+
+        if (!fullName || !email || !username || !password || !confirmPassword) {
+          alert("Please fill in all fields.");
+          return;
+        }
+        if (password !== confirmPassword) {
+          alert("Passwords do not match.");
+          return;
+        }
+        localStorage.setItem("registeredUser", username);
+        localStorage.setItem("registeredEmail", email);
+        localStorage.setItem("registeredName", fullName);
+        localStorage.setItem("registeredPassword", password);
+        alert("Registration successful! Please login now.");
+        window.location.href = "login.html";
+      });
+    });
+  </script>
+  
+</body>
+</html>

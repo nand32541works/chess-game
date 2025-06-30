@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | ChessMaster</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="#" class="logo"><i class="fa-solid fa-chess"></i>ChessMaster</a>
+        <ul>
+          <li><a href="#">Account <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="register.html">Register</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about1.html">About</a></li>
+                <li><a href="contact1.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </nav>
+  </header>
+  <div class="login-container">
+    <h2>Login to E-LearnPro</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="username">Username or Email</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <center>
+        <button type="submit" class="btn">Login</button>
+      </center>
+    </form>
+    <div class="login-footer">
+      Don’t have an account?
+      <a href="register.html">Register now</a>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="#" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fa-solid fa-chess" style="color: var(--main-color); margin-right: 1rem;"></i> ChessMaster
+          </a>
+          <br><br>
+          <p>The classic strategy game, online. Play against friends, the computer, or random opponents. Join now!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Play</h3>
+          <div class="links">
+            <a href="#">Play vs Computer</a>
+            <a href="#">2 Player Match</a>
+            <a href="#">Timed Game</a>
+            <a href="#">Leaderboards</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3 style="margin-top: -20px;">Contact</h3>
+          <div class="contact-details">
+            <a><i class="fa fa-location" style="gap: 8px;"></i> ChessMaster HQ, Park Street,<br> Kolkata, India </a>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone" style="gap: 8px;"></i> +91-8100402401
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const loginForm = document.getElementById("loginForm");
+        loginForm.addEventListener("submit", function (e) {
+            e.preventDefault();
+            const usernameOrEmail = document.getElementById("username").value.trim();
+            const password = document.getElementById("password").value.trim();
+            const registeredUsername = localStorage.getItem("registeredUser");
+            const registeredEmail = localStorage.getItem("registeredEmail");
+            const registeredPassword = localStorage.getItem("registeredPassword");
+            if (
+            (usernameOrEmail === registeredUsername || usernameOrEmail === registeredEmail) &&
+            password === registeredPassword
+            ) {
+               localStorage.setItem("loggedInUser", registeredUsername);
+               alert("Login successful!");
+            window.location.href = "home.html";
+            } 
+            else {
+               alert("Invalid username/email or password.");
+            }
+        });
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | ChessMaster</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style7.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><i class="fa-solid fa-chess"></i>ChessMaster</a>
+        <ul>
+          <li><a href="play.html">Play Now <i class="fas fa-play-circle"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Learn <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="play1.html">Play vs Computer</a></li>
+                <li><a href="play2.html">2 Player Match</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Community <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="join-coach.html">Become a Coach</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">Nanda32541<i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+  <section class="coach-section">
+    <h1 class="heading">Become a ChessMaster Coach</h1>
+    <p style="text-align: center; color: var(--white); font-size: 1.5rem; margin-bottom: 30px;">Join our elite team of chess mentors, share your knowledge, and inspire players worldwide.</p>
+    <div class="coach-benefits">
+        <div class="benefit-card">
+            <i class="fas fa-chess-knight"></i>
+            <h3>Teach Players Globally</h3>
+            <p>Connect with chess enthusiasts from all over the world and guide them towards mastery.</p>
+        </div>
+        <div class="benefit-card">
+            <i class="fas fa-award"></i>
+            <h3>Get Recognized</h3>
+            <p>Earn your coach badge, improve your profile rating, and build your reputation in our community.</p>
+        </div>
+        <div class="benefit-card">
+            <i class="fas fa-user-plus"></i>
+            <h3>Flexible Schedule</h3>
+            <p>Coach at your own pace. Take sessions whenever you're available — full freedom!</p>
+        </div>
+    </div>
+    <div class="coach-apply-form" style="max-width: 600px; margin: 50px auto;">
+        <h2 style="color: var(--white); text-align: center; margin-bottom: 20px;">Apply Now</h2>
+        <form>
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your full name" required>
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Your email" required>
+        </div>
+        <div class="form-group">
+            <label>Experience Level</label>
+            <select required>
+                <option value="" disabled selected>Select your level</option>
+                <option value="expert">Expert (2200+ Rating)</option>
+                <option value="advanced">Advanced (1800-2199 Rating)</option>
+                <option value="intermediate">Intermediate (1500-1799 Rating)</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Why would you like to coach with us?" rows="5" required></textarea>
+        </div>
+        <center>
+            <button class="btn" type="submit">Submit Application</button>
+        </center>
+        </form>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="#" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fa-solid fa-chess" style="color: var(--main-color); margin-right: 1rem;"></i> ChessMaster
+          </a>
+          <br><br>
+          <p>The classic strategy game, online. Play against friends, the computer, or random opponents. Join now!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Play</h3>
+          <div class="links">
+            <a href="#">Play vs Computer</a>
+            <a href="#">2 Player Match</a>
+            <a href="#">Timed Game</a>
+            <a href="#">Leaderboards</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3 style="margin-top: -20px;">Contact</h3>
+          <div class="contact-details">
+            <a><i class="fa fa-location" style="gap: 8px;"></i> ChessMaster HQ, Park Street,<br> Kolkata, India </a>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone" style="gap: 8px;"></i> +91-8100402401
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        const accountMenu = document.querySelector(".nav-2 .flex > ul > li:nth-child(2) > a");
+        accountMenu.innerHTML = `${loggedInUser} <i class="fas fa-angle-down"></i>`;
+      }
+    });
+
+    function signOut() {
+      localStorage.removeItem("loggedInUser");
+      alert("You have been signed out.");
+      window.location.reload();
+    }
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChessMaster | Profile</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+
+<header class="header">
+  <nav class="navbar nav-1">
+    <section class="flex">
+      <a href="home.html" class="logo"><i class="fa-solid fa-chess"></i> ChessMaster</a>
+      <ul>
+        <li><a href="play.html">Play Now <i class="fas fa-play-circle"></i></a></li>
+      </ul>
+    </section>
+  </nav>
+  <nav class="navbar nav-2">
+    <section class="flex">
+      <div id="menu-btn" class="fas fa-bars"></div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Learn <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="play1.html">Play vs Computer</a></li>
+              <li><a href="play2.html">2 Player Match</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Community <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="players.html">Players</a></li>
+              <li><a href="join-coach.html">Become a Coach</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="faq.html">FAQs</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <ul>
+        <li><a href="#">Nanda32541 <i class="fas fa-angle-down"></i></a>
+          <ul>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+  </nav>
+</header>
+
+<div class="profile-analysis-wrapper">
+  <section class="profile-section">
+    <div class="profile-container">
+      <div class="profile-card">
+        <div class="profile-image">
+          <img src="person.png" alt="User Photo">
+        </div>
+        <h2>Nanda32541</h2>
+        <p>Chess Enthusiast | Strategic Thinker | Intermediate Player</p>
+        <div class="profile-experience">
+          <p style="text-align: justify; font-style: italic; font-weight: bold; color: #ffa500;">
+            "A passionate chess player, Nanda32541 has been actively competing online and offline, mastering tactics, 
+            endgames, and strategic opening repertoires. With over 150+ matches played, he thrives on challenging stronger 
+            opponents and improving through every victory and loss."
+          </p>
+        </div>
+        <div class="profile-details">
+          <p style="color: white;"><i class="fas fa-envelope"></i> nandakishorejana780@gmail.com</p>
+          <p style="color: white;"><i class="fas fa-phone"></i> +91 81004 02401</p>
+          <p style="color: white;"><i class="fas fa-user-clock"></i> Member Since: March 2024</p>
+          <p style="color: white;"><i class="fas fa-chess"></i> Current Rating: 1625</p>
+        </div>
+        <div class="profile-buttons" style="font-size: 18px;">
+          <a href="#" class="inline-btn">Edit Profile</a>
+          <a href="login.html" class="btn logout-btn">Logout</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="data-analysis">
+    <div class="analysis-container">
+      <h2>Your Chess Stats</h2>
+      <div class="analysis-summary">
+        <div class="summary-card">
+          <h3>150</h3>
+          <p>Total Matches Played</p>
+        </div>
+        <div class="summary-card">
+          <h3>89</h3>
+          <p>Games Won</p>
+        </div>
+        <div class="summary-card">
+          <h3>61</h3>
+          <p>Games Lost</p>
+        </div>
+        <div class="summary-card">
+          <h3>1625</h3>
+          <p>Current Rating</p>
+        </div>
+        <div class="summary-card">
+          <h3>Intermediate</h3>
+          <p>Rank</p>
+        </div>
+        <div class="summary-card">
+          <h3>Top 12%</h3>
+          <p>Leaderboard Standing</p>
+        </div>
+      </div>
+      <div class="analysis-chart">
+        <h3>Performance Overview</h3>
+        <canvas id="chessStatsChart"></canvas>
+      </div>
+    </div>
+  </section>
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col" id="company">
+        <a href="home.html" class="logo"><i class="fa-solid fa-chess"></i> ChessMaster</a>
+        <p>The classic strategy game online. Play with friends, computer AI, or random opponents anytime.</p>
+        <div class="social">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col" id="services">
+        <h3>Play</h3>
+        <div class="links">
+          <a href="#">Play vs Computer</a>
+          <a href="#">2 Player Match</a>
+          <a href="#">Timed Match</a>
+          <a href="#">Leaderboards</a>
+        </div>
+      </div>
+      <div class="col" id="useful-links">
+        <h3>Links</h3>
+        <div class="links">
+          <a href="about.html">About</a>
+          <a href="faq.html">FAQs</a>
+          <a href="#">Terms</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+      <div class="col" id="contact">
+        <h3>Contact</h3>
+        <div class="contact-details">
+          <i class="fa fa-location-dot"></i>
+          <p>ChessMaster HQ, Park Street, Kolkata, India</p>
+        </div>
+        <br>
+        <div class="contact-details">
+          <i class="fa fa-phone"></i>
+          <p>+91-8100402401</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('chessStatsChart').getContext('2d');
+  const chessStatsChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Matches Played', 'Wins', 'Losses', 'Rating'],
+      datasets: [{
+        label: 'Chess Stats',
+        data: [150, 89, 61, 1625],
+        backgroundColor: ['#ffa500', '#28a745', '#dc3545', '#007bff'],
+        borderRadius: 6
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            stepSize: 20
+          }
+        }
+      }
+    }
+  });
+</script>
+
+</body>
+</html>

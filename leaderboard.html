@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leader Board | ChessMaster</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="chessmaster-style.css">
+  <style>
+    .leaderboard {
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 20px;
+      background: var(--light-bg);
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      color: rgb(0, 0, 0);
+    }
+    .leaderboard h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: var(--main-color);
+    }
+    .leaderboard table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: center;
+    }
+    .leaderboard th, .leaderboard td {
+      padding: 14px;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .leaderboard th {
+      background: var(--main-color);
+      color: rgb(0, 0, 0);
+    }
+    .leaderboard tbody tr:hover {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><i class="fa-solid fa-chess"></i>ChessMaster</a>
+        <ul>
+          <li><a href="play.html">Play Now <i class="fas fa-play-circle"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Learn <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="play1.html">Play vs Computer</a></li>
+                <li><a href="play2.html">2 Player Match</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Community <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="join-coach.html">Become a Coach</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">Nanda32541<i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <div class="leaderboard">
+    <h1>🏆 ChessMaster Leaderboard</h1>
+    <table>
+      <thead style="font-size: 12px;">
+        <tr>
+          <th>Rank</th>
+          <th>Player</th>
+          <th>Rating</th>
+          <th>Wins</th>
+          <th>Losses</th>
+        </tr>
+      </thead>
+      <tbody style="font-size: 12px;">
+        <tr><td>1</td><td>ChessPro99</td><td>2450</td><td>118</td><td>17</td></tr>
+        <tr><td>2</td><td>QueenMaster</td><td>2420</td><td>110</td><td>20</td></tr>
+        <tr><td>3</td><td>KnightHawk</td><td>2405</td><td>105</td><td>22</td></tr>
+        <tr><td>4</td><td>Strategist77</td><td>2390</td><td>100</td><td>25</td></tr>
+        <tr><td>5</td><td>CheckmateKing</td><td>2350</td><td>98</td><td>26</td></tr>
+        <tr><td>6</td><td>GrandRook</td><td>2305</td><td>95</td><td>29</td></tr>
+        <tr><td>7</td><td>ThePawnStorm</td><td>2280</td><td>93</td><td>31</td></tr>
+        <tr><td>8</td><td>BishopBlade</td><td>2260</td><td>90</td><td>34</td></tr>
+        <tr><td>9</td><td>ShadowKnight</td><td>2240</td><td>88</td><td>36</td></tr>
+        <tr><td>10</td><td>TacticTiger</td><td>2220</td><td>85</td><td>38</td></tr>
+        <tr><td>11</td><td>SilentQueen</td><td>2185</td><td>84</td><td>40</td></tr>
+        <tr style="color: var(--main-color); font-weight: bold; background: white;"><td>12</td><td>Nanda32541</td><td>1625</td><td>90</td><td>65</td></tr>
+        <tr><td>13</td><td>RookHunter</td><td>2150</td><td>82</td><td>42</td></tr>
+        <tr><td>14</td><td>EndgameMaster</td><td>2130</td><td>80</td><td>43</td></tr>
+        <tr><td>15</td><td>PawnCrusher</td><td>2105</td><td>79</td><td>45</td></tr>
+        <tr><td>16</td><td>DarkHorse</td><td>2080</td><td>78</td><td>47</td></tr>
+        <tr><td>17</td><td>BoardWizard</td><td>2050</td><td>76</td><td>49</td></tr>
+        <tr><td>18</td><td>FastCheckmate</td><td>2025</td><td>74</td><td>51</td></tr>
+        <tr><td>19</td><td>SilentBishop</td><td>2010</td><td>73</td><td>52</td></tr>
+        <tr><td>20</td><td>ThePawnPatrol</td><td>1990</td><td>71</td><td>54</td></tr>
+        <tr><td>21</td><td>QueenTactix</td><td>1980</td><td>70</td><td>55</td></tr>
+        <tr><td>22</td><td>BoardLion</td><td>1960</td><td>69</td><td>56</td></tr>
+        <tr><td>23</td><td>FireChess</td><td>1950</td><td>68</td><td>57</td></tr>
+        <tr><td>24</td><td>MasterMove</td><td>1930</td><td>67</td><td>58</td></tr>
+        <tr><td>25</td><td>RisingKnight</td><td>1915</td><td>66</td><td>59</td></tr>
+        <tr><td>26</td><td>CheckMaster</td><td>1900</td><td>65</td><td>60</td></tr>
+        <tr><td>27</td><td>DeepRook</td><td>1890</td><td>64</td><td>61</td></tr>
+        <tr><td>28</td><td>GrandCheck</td><td>1880</td><td>63</td><td>62</td></tr>
+        <tr><td>29</td><td>PawnOverlord</td><td>1860</td><td>62</td><td>63</td></tr>
+        <tr><td>30</td><td>TheBoardBeast</td><td>1850</td><td>61</td><td>64</td></tr>
+        <tr><td>31</td><td>TacticianX</td><td>1840</td><td>60</td><td>65</td></tr>
+        <tr><td>32</td><td>CastleKing</td><td>1830</td><td>59</td><td>66</td></tr>
+        <tr><td>33</td><td>SwiftQueen</td><td>1820</td><td>58</td><td>67</td></tr>
+        <tr><td>34</td><td>TheChessWolf</td><td>1810</td><td>57</td><td>68</td></tr>
+        <tr><td>35</td><td>MoveHunter</td><td>1800</td><td>56</td><td>69</td></tr>
+        <tr><td>36</td><td>QueenDomination</td><td>1790</td><td>55</td><td>70</td></tr>
+        <tr><td>37</td><td>BishopFury</td><td>1780</td><td>54</td><td>71</td></tr>
+        <tr><td>38</td><td>KnightStorm</td><td>1770</td><td>53</td><td>72</td></tr>
+        <tr><td>39</td><td>RookRider</td><td>1760</td><td>52</td><td>73</td></tr>
+        <tr><td>40</td><td>TheGrandPawn</td><td>1750</td><td>51</td><td>74</td></tr>
+        <tr><td>41</td><td>CastlerX</td><td>1740</td><td>50</td><td>75</td></tr>
+        <tr><td>42</td><td>RapidBishop</td><td>1730</td><td>49</td><td>76</td></tr>
+        <tr><td>43</td><td>TowerMaster</td><td>1720</td><td>48</td><td>77</td></tr>
+        <tr><td>44</td><td>PawnPusher</td><td>1710</td><td>47</td><td>78</td></tr>
+        <tr><td>45</td><td>BladeKnight</td><td>1700</td><td>46</td><td>79</td></tr>
+        <tr><td>46</td><td>SilentCastle</td><td>1690</td><td>45</td><td>80</td></tr>
+        <tr><td>47</td><td>TheTrapQueen</td><td>1680</td><td>44</td><td>81</td></tr>
+        <tr><td>48</td><td>BoardGuru</td><td>1670</td><td>43</td><td>82</td></tr>
+        <tr><td>49</td><td>SharpMove</td><td>1660</td><td>42</td><td>83</td></tr>
+        <tr><td>50</td><td>ChessHero</td><td>1650</td><td>41</td><td>84</td></tr>
+        <tr><td>51</td><td>MasterTactics</td><td>1640</td><td>40</td><td>85</td></tr>
+        <tr><td>52</td><td>EndGameQueen</td><td>1630</td><td>39</td><td>86</td></tr>
+        <tr><td>53</td><td>BoardSage</td><td>1620</td><td>38</td><td>87</td></tr>
+        <tr><td>54</td><td>ChessFox</td><td>1610</td><td>37</td><td>88</td></tr>
+        <tr><td>55</td><td>CheckMateX</td><td>1600</td><td>36</td><td>89</td></tr>
+        <tr><td>56</td><td>SwiftKnight</td><td>1590</td><td>35</td><td>90</td></tr>
+        <tr><td>57</td><td>PawnSlayer</td><td>1580</td><td>34</td><td>91</td></tr>
+        <tr><td>58</td><td>GrandCheckmate</td><td>1570</td><td>33</td><td>92</td></tr>
+        <tr><td>59</td><td>SilentRook</td><td>1560</td><td>32</td><td>93</td></tr>
+        <tr><td>60</td><td>RiverPool</td><td>1548</td><td>30</td><td>98</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <footer class="footer" style="margin-top: 90px;">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="#" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fa-solid fa-chess" style="color: var(--main-color); margin-right: 1rem;"></i> ChessMaster
+          </a>
+          <br><br>
+          <p>The classic strategy game, online. Play against friends, the computer, or random opponents. Join now!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Play</h3>
+          <div class="links">
+            <a href="#">Play vs Computer</a>
+            <a href="#">2 Player Match</a>
+            <a href="#">Timed Game</a>
+            <a href="#">Leaderboards</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3 style="margin-top: -20px;">Contact</h3>
+          <div class="contact-details">
+            <a><i class="fa fa-location" style="gap: 8px;"></i> ChessMaster HQ, Park Street,<br> Kolkata, India </a>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone" style="gap: 8px;"></i> +91-8100402401
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        const accountMenu = document.querySelector(".nav-2 .flex > ul > li:nth-child(2) > a");
+        accountMenu.innerHTML = `${loggedInUser} <i class="fas fa-angle-down"></i>`;
+      }
+    });
+
+    function signOut() {
+      localStorage.removeItem("loggedInUser");
+      alert("You have been signed out.");
+      window.location.reload();
+    }
+  </script>
+
+</body>
+</html>

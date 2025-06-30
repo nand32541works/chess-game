@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | ChessMaster</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="navbar nav-1">
+      <section class="flex">
+        <a href="home.html" class="logo"><i class="fa-solid fa-chess"></i>ChessMaster</a>
+        <ul>
+          <li><a href="play.html">Play Now <i class="fas fa-play-circle"></i></a></li>
+        </ul>
+      </section>
+    </nav>
+    <nav class="navbar nav-2">
+      <section class="flex">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div class="menu">
+          <ul>
+            <li><a href="#">Learn <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="play1.html">Play vs Computer</a></li>
+                <li><a href="play2.html">2 Player Match</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Community <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="players.html">Players</a></li>
+                <li><a href="join-coach.html">Become a Coach</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Help <i class="fas fa-angle-down"></i></a>
+              <ul>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <ul>
+          <li><a href="#">Nanda32541<i class="fas fa-angle-down"></i></a>
+            <ul>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="login.html" onclick="signOut()">Sign Out</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+  </header>
+
+  <section class="players-section">
+    <h1 class="heading">Computer Challenge Chess Players</h1>
+    <p style="color: white; margin-top: -15px; margin-bottom: 20px; font-size: 18px;">Beginner Level Players</p>
+    <div class="players-grid">
+        <div class="player-card">
+            <img src="beginner1.png" alt="Player">
+            <h3>Amit Sen</h3>
+            <p>Rating: 950</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="beginner2.png" alt="Player">
+            <h3>Sana Iqbal</h3>
+            <p>Rating: 1000</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="beginner3.png" alt="Player">
+            <h3>Kunal Roy</h3>
+            <p>Rating: 900</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="beginner4.png" alt="Player">
+            <h3>Meera Singh</h3>
+            <p>Rating: 1050</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+    </div>
+    <p style="color: white; margin-top: 35px; margin-bottom: 20px; font-size: 18px;">Intermediate Level Players</p>
+    <div class="players-grid">
+        <div class="player-card">
+            <img src="person1.png" alt="Player 1">
+            <h3>S. Satya Kishore</h3>
+            <p>Rating: 1600</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="person2.png" alt="Player 2">
+            <h3>Priya Das</h3>
+            <p>Rating: 1750</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="person3.png" alt="Player 3">
+            <h3>Rahul Sharma</h3>
+            <p>Rating: 1500</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="person4.png" alt="Player 4">
+            <h3>Neha Kapoor</h3>
+            <p>Rating: 1800</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+    </div>
+    <p style="color: white; margin-top: 35px; margin-bottom: 20px; font-size: 18px;">Advanced Level Players</p>
+    <div class="players-grid">
+        <div class="player-card">
+            <img src="advanced1.png" alt="Player">
+            <h3>Rajeev Kumar</h3>
+            <p>Rating: 1900</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="advanced2.png" alt="Player">
+            <h3>Shweta Arora</h3>
+            <p>Rating: 2000</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="advanced3.png" alt="Player">
+            <h3>Arjun Patel</h3>
+            <p>Rating: 1950</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="advanced4.png" alt="Player">
+            <h3>Divya Reddy</h3>
+            <p>Rating: 1850</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+    </div>
+    <p style="color: white; margin-top: 35px; margin-bottom: 20px; font-size: 18px;">Expert Level Players</p>
+    <div class="players-grid">
+        <div class="player-card">
+            <img src="expert1.png" alt="Player">
+            <h3>Sagar Verma</h3>
+            <p>Rating: 2100</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="expert2.png" alt="Player">
+            <h3>Nidhi Kapoor</h3>
+            <p>Rating: 2200</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="expert3.png" alt="Player">
+            <h3>Rohan Bhatt</h3>
+            <p>Rating: 2150</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="expert4.png" alt="Player">
+            <h3>Sneha Mukherjee</h3>
+            <p>Rating: 2250</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+    </div>
+    <p style="color: white; margin-top: 35px; margin-bottom: 20px; font-size: 18px;">Grandmaster Level Players</p>
+    <div class="players-grid">
+        <div class="player-card">
+            <img src="grandmaster1.png" alt="Player">
+            <h3>Anand Sen</h3>
+            <p>Rating: 2500</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="gm2.png" alt="Player">
+            <h3>Sriya Sharma</h3>
+            <p>Rating: 2550</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="gm3.png" alt="Player">
+            <h3>Dev Mehra</h3>
+            <p>Rating: 2600</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+        <div class="player-card">
+            <img src="gm4.png" alt="Player">
+            <h3>Aarohi Desai</h3>
+            <p>Rating: 2650</p>
+            <a href="play2.html" class="inline-btn">Challenge</a>
+        </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col" id="company">
+          <a href="#" class="logo" style="font-size: 2.2rem; color: var(--white);">
+            <i class="fa-solid fa-chess" style="color: var(--main-color); margin-right: 1rem;"></i> ChessMaster
+          </a>
+          <br><br>
+          <p>The classic strategy game, online. Play against friends, the computer, or random opponents. Join now!</p>
+          <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+        <div class="col" id="services">
+          <h3>Play</h3>
+          <div class="links">
+            <a href="#">Play vs Computer</a>
+            <a href="#">2 Player Match</a>
+            <a href="#">Timed Game</a>
+            <a href="#">Leaderboards</a>
+          </div>
+        </div>
+        <div class="col" id="useful-links">
+          <h3>Links</h3>
+          <div class="links">
+            <a href="about.html">About</a>
+            <a href="faq.html">FAQs</a>
+            <a href="terms.html">Terms & Policies</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+        <div class="col" id="contact">
+          <h3 style="margin-top: -20px;">Contact</h3>
+          <div class="contact-details">
+            <a><i class="fa fa-location" style="gap: 8px;"></i> ChessMaster HQ, Park Street,<br> Kolkata, India </a>
+          </div>
+          <br>
+          <div class="contact-details">
+            <i class="fa fa-phone" style="gap: 8px;"></i> +91-8100402401
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = localStorage.getItem("loggedInUser");
+      if (loggedInUser) {
+        const accountMenu = document.querySelector(".nav-2 .flex > ul > li:nth-child(2) > a");
+        accountMenu.innerHTML = `${loggedInUser} <i class="fas fa-angle-down"></i>`;
+      }
+    });
+
+    function signOut() {
+      localStorage.removeItem("loggedInUser");
+      alert("You have been signed out.");
+      window.location.reload();
+    }
+  </script>
+
+</body>
+</html>
